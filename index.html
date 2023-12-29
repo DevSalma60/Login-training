@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="login mx-auto mt-5 text-center p-5" id="login">
+        <h2 class="fw-medium mb-4">Smart Login System</h2>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          id="loginEmail"
+          class="form-control mb-3"
+        />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          id="loginpassword"
+          class="form-control"
+        />
+        <p id="incorrect" class="mt-3 text-danger"></p>
+        <a class="text-decoration-none" id="loginbtn" href="#"
+          ><button class="btn my-4 w-100">Login</button></a
+        >
+        <p class="text-white">
+          Don’t have an account? <a href="#" id="signuppage">Sign Up</a>
+        </p>
+      </div>
+      <!-- signup -->
+      <div class="d-none login mx-auto mt-5 text-center p-5" id="signup">
+        <h2 class="fw-medium mb-4">Smart Login System</h2>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          id="signupName"
+          class="form-control"
+        />
+        <div id="namealret" class="d-none alert alert-danger">
+          <p>Your Name has to contain at least 3 charachter...</p>
+        </div>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          id="signupEmail"
+          class="form-control mt-3"
+        />
+        <div id="emailalret" class="d-none alert alert-danger">
+          Your Email is not valid...
+        </div>
+        <input
+          type="password"
+          placeholder="Enter your password"
+          id="signupPassword"
+          class="form-control mt-3"
+        />
+        <div id="passalret" class="d-none alert alert-danger">
+          Your passworrd has to contain at least 4 word character...
+        </div>
+        <p id="sucess" class="mt-3 text-success d-none">Success</p>
+        <p id="exist" class="mt-3 text-danger d-none">email already exists</p>
+        <button id="signupbtn" class="btn my-4 w-100">Sign Up</button>
+        <p class="text-white">
+          You have an account? <a href="#" id="loginpage">Signin</a>
+        </p>
+      </div>
+      <!-- Home -->
+      <div id="home" class="d-none">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand text-white" href="#">SMART LOGIN</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <button class="btn btn-outline-warning navbtn p-2 ms-auto">
+                <a href="index.html" class="text-decoration-none">Logout</a>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="d-flex justify-content-center align-items-center p-1">
+          <div class="home login text-center p-5">
+            <h2 id="welcome"></h2>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>

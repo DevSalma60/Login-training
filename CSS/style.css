@@ -1,0 +1,74 @@
+body {
+  background-color: #24353f;
+}
+:root {
+  --info: #17a2b8;
+  --white: #fff;
+}
+nav {
+  background-color: #24353f;
+  box-shadow: 0 0 60px -10px #000;
+}
+input::-webkit-input-placeholder {
+  color: rgb(187, 187, 187) !important;
+  font-size: 17px !important;
+}
+main {
+  font-family: "Titillium Web", sans-serif;
+  color: var(--white);
+}
+main .login {
+  background-color: #24353f;
+  width: 65%;
+  box-shadow: 0 0 60px -10px #000;
+}
+.login h2 {
+  color: var(--info);
+  font-size: 40px;
+}
+.login .form-control {
+  background-color: transparent !important;
+  color: #fff !important;
+  padding: 0.5rem 0.75rem !important;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+.login p {
+  font-size: 18px;
+}
+.login p a {
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.3s;
+}
+.login p a:hover {
+  text-decoration: underline;
+}
+.login .btn {
+  border: var(--info) solid 1px;
+  color: var(--info);
+  transition: all 0.3s;
+}
+.shade {
+  box-shadow: 0 0 4px 1px var(--info);
+}
+
+.login .btn:hover {
+  background-color: var(--info);
+  color: var(--white);
+}
+/* home section */
+.home {
+  margin-top: 200px;
+}
+
+.navbtn a {
+  color: rgb(187, 187, 187) !important;
+}
+.navbtn a:hover {
+  color: var(--white) !important;
+}
+.navbar-brand {
+  font-size: 22px;
+}
